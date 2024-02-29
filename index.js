@@ -1,25 +1,21 @@
-// Function to find drivers that match the provided name
 function findMatching(drivers, name) {
     return drivers.filter(driver =>
       driver.toLowerCase() === name.toLowerCase()
     );
   }
   
-  // Function to find drivers whose names begin with the provided letters
   function fuzzyMatch(drivers, letters) {
     return drivers.filter(driver =>
       driver.toLowerCase().startsWith(letters.toLowerCase())
     );
   }
   
-  // Function to check if a name matches any driver's name in the data structure
   function matchName(drivers, name) {
     return drivers.filter(driver =>
       driver.name.toLowerCase() === name.toLowerCase()
     );
   }
   
-  // Example usage:
   const drivers = [
     "John",
     "Mary",
